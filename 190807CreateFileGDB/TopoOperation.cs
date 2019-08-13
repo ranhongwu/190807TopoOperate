@@ -138,17 +138,6 @@ namespace RHW.Topo
         //验证拓扑
         private void VaildateTopo(ITopology pTopology,IEnvelope pEnvelope)
         {
-            /*IPolygon locationPolygon = new PolygonClass();
-            ISegmentCollection pSegmentCollection = locationPolygon as ISegmentCollection;
-            pSegmentCollection.SetRectangle(pEnvelope);
-            IPolygon pPolygon = pTopology.get_DirtyArea(locationPolygon);
-
-            //验证拓扑
-            if (!pPolygon.IsEmpty)
-            {
-                IEnvelope areaToVaildate = pPolygon.Envelope;
-                pTopology.ValidateTopology(areaToVaildate);
-            }*/
             double x= pEnvelope.LowerLeft.X;
             double y = pEnvelope.LowerLeft.Y;
             IGeoDataset pGeoDS = pTopology as IGeoDataset;
