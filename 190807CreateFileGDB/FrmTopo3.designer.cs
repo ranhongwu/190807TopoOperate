@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTopo3));
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
@@ -44,43 +43,50 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(233, 287);
+            this.simpleButton2.Location = new System.Drawing.Point(333, 451);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton2.Size = new System.Drawing.Size(107, 36);
             this.simpleButton2.TabIndex = 5;
             this.simpleButton2.Text = "上一步";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(314, 287);
+            this.simpleButton3.Location = new System.Drawing.Point(449, 451);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton3.Size = new System.Drawing.Size(107, 36);
             this.simpleButton3.TabIndex = 6;
             this.simpleButton3.Text = "下一步";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(436, 287);
+            this.simpleButton4.Location = new System.Drawing.Point(623, 451);
+            this.simpleButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton4.Size = new System.Drawing.Size(107, 36);
             this.simpleButton4.TabIndex = 7;
             this.simpleButton4.Text = "取消";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(12, 43);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridControl1.Location = new System.Drawing.Point(17, 68);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(408, 219);
+            this.gridControl1.Size = new System.Drawing.Size(583, 344);
             this.gridControl1.TabIndex = 8;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
+            this.gridView1.DetailHeight = 550;
+            this.gridView1.FixedLineWidth = 3;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
@@ -89,44 +95,48 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(12, 23);
+            this.labelControl1.Location = new System.Drawing.Point(17, 36);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(60, 14);
+            this.labelControl1.Size = new System.Drawing.Size(90, 22);
             this.labelControl1.TabIndex = 9;
             this.labelControl1.Text = "拓扑规则：";
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(436, 94);
+            this.simpleButton1.Location = new System.Drawing.Point(623, 148);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.Size = new System.Drawing.Size(107, 36);
             this.simpleButton1.TabIndex = 10;
             this.simpleButton1.Text = "添加规则";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // simpleButton5
             // 
-            this.simpleButton5.Location = new System.Drawing.Point(436, 143);
+            this.simpleButton5.Location = new System.Drawing.Point(623, 225);
+            this.simpleButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton5.Size = new System.Drawing.Size(107, 36);
             this.simpleButton5.TabIndex = 11;
             this.simpleButton5.Text = "删除规则";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton6
             // 
-            this.simpleButton6.Location = new System.Drawing.Point(436, 192);
+            this.simpleButton6.Location = new System.Drawing.Point(623, 302);
+            this.simpleButton6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton6.Size = new System.Drawing.Size(107, 36);
             this.simpleButton6.TabIndex = 12;
             this.simpleButton6.Text = "全部删除";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
             // FrmTopo3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 331);
+            this.ClientSize = new System.Drawing.Size(761, 520);
             this.Controls.Add(this.simpleButton6);
             this.Controls.Add(this.simpleButton5);
             this.Controls.Add(this.simpleButton1);
@@ -135,7 +145,7 @@
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton2);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "FrmTopo3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
